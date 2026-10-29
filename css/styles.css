@@ -1,0 +1,314 @@
+/* ========================================
+   McGeyever of the Underworld
+   Shared website styles
+   ======================================== */
+
+:root {
+    --burgundy: #4b1728;
+    --burgundy-dark: #261019;
+    --parchment: #f0e4ca;
+    --parchment-dark: #d6c4a2;
+    --gold: #b89554;
+    --ink: #24191a;
+    --muted: #bfb0a4;
+    --panel: #332029;
+}
+
+/* 1. Basic page setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--burgundy-dark);
+    color: var(--parchment);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--gold);
+}
+
+a:hover {
+    color: var(--parchment);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+/* 2. Header and navigation */
+
+.site-header {
+    padding: 1.25rem 5%;
+    background: var(--burgundy);
+    border-bottom: 2px solid var(--gold);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 0 auto 1rem;
+    color: var(--parchment);
+    text-decoration: none;
+}
+
+.brand img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--parchment-dark);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.site-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+
+.site-nav a {
+    padding: 0.35rem 0;
+    text-decoration: none;
+    color: var(--parchment);
+    border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    color: var(--gold);
+    border-bottom-color: var(--gold);
+}
+
+/* 3. Main content */
+
+main {
+    width: min(1100px, 90%);
+    min-height: 65vh;
+    margin: 0 auto;
+    padding: 3rem 0 4rem;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--parchment);
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+p {
+    max-width: 72ch;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.page-intro {
+    margin-bottom: 3rem;
+}
+
+.page-intro p {
+    color: var(--muted);
+    font-size: 1.1rem;
+}
+
+/* 4. Homepage hero */
+
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--burgundy);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+}
+
+.hero p {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero h1 {
+    margin: 0.75rem 0;
+}
+
+.hero-symbol {
+    margin-bottom: 1rem;
+    color: var(--gold);
+    font-size: 3rem;
+}
+
+/* 5. Buttons and content cards */
+
+.button {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    padding: 0.75rem 1.25rem;
+    background: var(--gold);
+    color: var(--ink);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--parchment);
+    color: var(--ink);
+}
+
+.button-secondary {
+    background: transparent;
+    color: var(--parchment);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 1.25rem;
+    background: var(--panel);
+    border: 1px solid #76505c;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    color: var(--parchment);
+    border: 1px solid var(--gold);
+    border-radius: 3px;
+    font-size: 0.85rem;
+}
+
+/* 6. Forms */
+
+.contact-form {
+    max-width: 650px;
+}
+
+.form-field {
+    margin-bottom: 1.25rem;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--parchment);
+    color: var(--ink);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    font: inherit;
+}
+
+.form-field textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* 7. Footer */
+
+.site-footer {
+    padding: 2rem 5%;
+    text-align: center;
+    background: var(--burgundy);
+    border-top: 1px solid var(--gold);
+    color: var(--parchment-dark);
+}
+
+.site-footer p {
+    margin: 0.35rem auto;
+}
+
+/* 8. Smaller screens */
+
+@media (max-width: 750px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .brand img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    main {
+        padding-top: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

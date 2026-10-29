@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact McG&quot;eye&quot;ver of the Underworld about paranormal equipment, collaborations, and events.">
+
+    <title>Contact | McG"eye"ver of the Underworld</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-symbol" aria-hidden="true">◉</span>
+            <span>
+                <span class="brand-name">McG"eye"ver of the Underworld</span>
+                <span class="brand-tagline">Engineering the Unexplained</span>
+            </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">Meet the Maker</a>
+            <a href="workshop.html">The Workshop</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Questions, Ideas &amp; Collaborations</p>
+            <h1>Make Contact</h1>
+
+            <p>
+                Interested in the workshop, have a question about
+                a project, or want to discuss a future event?
+                Use the form below to prepare an inquiry.
+            </p>
+        </section>
+
+        <section>
+            <h2>Send an Inquiry</h2>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-field">
+                    <label for="name">Your name</label>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           autocomplete="name"
+                           required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Your email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           autocomplete="email"
+                           required>
+                </div>
+
+                <div class="form-field">
+                    <label for="subject">What is your inquiry about?</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a topic</option>
+                        <option value="project">A project or prototype</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="event">Conventions or events</option>
+                        <option value="other">Something else</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Your message</label>
+                    <textarea id="message"
+                              name="message"
+                              required></textarea>
+                </div>
+
+                <button class="button" type="submit">
+                    Prepare Inquiry
+                </button>
+
+                <p id="form-feedback" aria-live="polite">
+                    This demonstration form does not send messages.
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h2>Future Appearances</h2>
+
+            <p>
+                Convention appearances, demonstrations, and
+                event announcements will be posted here once
+                dates and details are confirmed.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            &copy; <span class="current-year">2026</span>
+            McG"eye"ver of the Underworld
+        </p>
+        <p>Built with curiosity and a little ingenuity.</p>
+    </footer>
+</body>
+</html>

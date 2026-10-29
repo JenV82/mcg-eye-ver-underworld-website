@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore prototype development, field testing, and custom paranormal investigation tools from McG&quot;eye&quot;ver of the Underworld.">
+
+    <title>The Workshop | McG"eye"ver of the Underworld</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/projects.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-symbol" aria-hidden="true">◉</span>
+            <span>
+                <span class="brand-name">McG"eye"ver of the Underworld</span>
+                <span class="brand-tagline">Engineering the Unexplained</span>
+            </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">Meet the Maker</a>
+            <a href="workshop.html" aria-current="page">The Workshop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <p class="eyebrow">Ideas Become Experiments</p>
+            <h1>Welcome to the Workshop</h1>
+
+            <p>
+                Every project has a story. Follow the journey
+                from initial concept to prototype, field testing,
+                and design refinement.
+            </p>
+        </section>
+
+        <section>
+            <h2>Current Projects</h2>
+
+            <p>
+                The project gallery will showcase equipment
+                in development, prototypes undergoing field tests,
+                and completed builds.
+            </p>
+
+            <div class="project-filters" aria-label="Filter projects">
+                <button class="button filter-button"
+                        type="button"
+                        data-filter="all"
+                        aria-pressed="true">
+                    All Projects
+                </button>
+
+                <button class="button button-secondary filter-button"
+                        type="button"
+                        data-filter="development"
+                        aria-pressed="false">
+                    In Development
+                </button>
+
+                <button class="button button-secondary filter-button"
+                        type="button"
+                        data-filter="testing"
+                        aria-pressed="false">
+                    Field Testing
+                </button>
+
+                <button class="button button-secondary filter-button"
+                        type="button"
+                        data-filter="completed"
+                        aria-pressed="false">
+                    Completed
+                </button>
+            </div>
+
+            <div class="card-grid" id="project-gallery">
+                <article class="card project-card"
+                         data-status="development">
+                    <p class="status">In Development</p>
+                    <h3>Prototype One</h3>
+                    <p>
+                        Placeholder for a project description,
+                        its purpose, and the current design goals.
+                    </p>
+                </article>
+
+                <article class="card project-card"
+                         data-status="testing">
+                    <p class="status">Field Testing</p>
+                    <h3>Prototype Two</h3>
+                    <p>
+                        Placeholder for field observations,
+                        testing notes, and potential improvements.
+                    </p>
+                </article>
+
+                <article class="card project-card"
+                         data-status="completed">
+                    <p class="status">Completed</p>
+                    <h3>Completed Build</h3>
+                    <p>
+                        Placeholder for a finished build,
+                        its features, and lessons learned.
+                    </p>
+                </article>
+            </div>
+
+            <p id="project-count" aria-live="polite">
+                Showing 3 demonstration projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>From the Workbench to the Field</h2>
+
+            <p>
+                A prototype is only part of the process.
+                Testing, observation, and refinement help
+                determine what to change in the next iteration.
+            </p>
+
+            <p>
+                Field notes and project updates will be added
+                as new builds progress.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            &copy; <span class="current-year">2026</span>
+            McG"eye"ver of the Underworld
+        </p>
+        <p>Built with curiosity and a little ingenuity.</p>
+    </footer>
+</body>
+</html>
