@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
 
-            const formMessage = document.querySelector("#form-message");
+            const formMessage = document.querySelector("#form-feedback");
 
             if (formMessage) {
                 formMessage.textContent =
