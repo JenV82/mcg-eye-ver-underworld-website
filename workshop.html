@@ -44,80 +44,79 @@
             </p>
         </section>
 
-        <section>
+        <section class="section">
             <h2>Current Projects</h2>
 
-            <p>
-                The project gallery will showcase equipment
-                in development, prototypes undergoing field tests,
-                and completed builds.
-            </p>
-
-            <div class="project-filters" aria-label="Filter projects">
+            <div class="filter-buttons">
                 <button class="button filter-button"
-                        type="button"
                         data-filter="all"
                         aria-pressed="true">
                     All Projects
                 </button>
 
                 <button class="button button-secondary filter-button"
-                        type="button"
-                        data-filter="development"
-                        aria-pressed="false">
+                        data-filter="development">
                     In Development
                 </button>
 
                 <button class="button button-secondary filter-button"
-                        type="button"
-                        data-filter="testing"
-                        aria-pressed="false">
+                        data-filter="testing">
                     Field Testing
                 </button>
 
                 <button class="button button-secondary filter-button"
-                        type="button"
-                        data-filter="completed"
-                        aria-pressed="false">
+                        data-filter="completed">
                     Completed
                 </button>
             </div>
 
-            <div class="card-grid" id="project-gallery">
-                <article class="card project-card"
-                         data-status="development">
-                    <p class="status">In Development</p>
-                    <h3>Prototype One</h3>
+            <p id="project-count">Showing 3 demonstration projects.</p>
+
+            <div class="card-grid">
+
+                <!-- XCOM -->
+                <article class="card project-card" data-status="development">
+                    <img src="assets/XCOM.jpeg"
+                        alt="XCOM paranormal investigation device">
+
+                    <h3>XCOM</h3>
+
                     <p>
-                        Placeholder for a project description,
-                        its purpose, and the current design goals.
+                        An experimental investigation system currently in
+                        development, like a spirit board, exploring new ways
+                        to interact with and interpret potential anomalies.
                     </p>
                 </article>
 
-                <article class="card project-card"
-                         data-status="testing">
-                    <p class="status">Field Testing</p>
-                    <h3>Prototype Two</h3>
+                <!-- CHADD -->
+                <article class="card project-card" data-status="testing">
+                    <img src="assets/XCOM.jpeg"
+                        alt="Shared hardware platform used by CHADD and XCOM">
+
+                    <h3>CHADD</h3>
+
                     <p>
-                        Placeholder for field observations,
-                        testing notes, and potential improvements.
+                        A field-testing project built on the same hardware
+                        platform as XCOM, exploring location-specific
+                        communication and experimental interaction.
                     </p>
                 </article>
 
-                <article class="card project-card"
-                         data-status="completed">
-                    <p class="status">Completed</p>
-                    <h3>Completed Build</h3>
+                <!-- Seymore -->
+                <article class="card project-card" data-status="completed">
+                    <img src="assets/Seymore.jpeg"
+                        alt="Seymore paranormal investigation device">
+
+                    <h3>Seymore</h3>
+
                     <p>
-                        Placeholder for a finished build,
-                        its features, and lessons learned.
+                        A proximity device using a plant as a familiar trigger
+                        object to those in the spirit world, designed to support
+                        experimental field research.
                     </p>
                 </article>
+
             </div>
-
-            <p id="project-count" aria-live="polite">
-                Showing 3 demonstration projects.
-            </p>
         </section>
 
         <section>
@@ -143,5 +142,8 @@
         </p>
         <p>Built with curiosity and a little ingenuity.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 </html>

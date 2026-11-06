@@ -45,7 +45,3 @@ document.addEventListener("DOMContentLoaded", function () {
             filterProjects(button.dataset.filter);
         });
     });
-
-    // Show all projects when the page first loads.
-    filterProjects("all");
-});
